@@ -208,7 +208,23 @@ $("#computer-turn").click(function (event) {
 
   console.log("computer turn");
 
-  if (row2C2 === "e") {
+  if (row2C2 === "o" && row1C1 === "o") {
+    board[2][2] = currentPlayer;
+  } else if (row2C2 === "o" && row1C3 === "o") {
+    board[2][0] = currentPlayer;
+  } else if (row2C2 === "o" && row1C2 === "o") {
+    board[2][1] = currentPlayer;
+  } else if (row2C2 === "o" && row2C1 === "o") {
+    board[1][2] = currentPlayer;
+  }  else if (row2C2 === "x" && row1C1 === "x") {
+    board[2][2] = currentPlayer;
+  } else if (row2C2 === "x" && row1C3 === "x") {
+    board[2][0] = currentPlayer;
+  } else if (row2C2 === "x" && row1C2 === "x") {
+    board[2][1] = currentPlayer;
+  } else if (row2C2 === "x" && row2C1 === "x") {
+    board[1][2] = currentPlayer;
+  } else if (row2C2 === "e") {
     board[1][1] = currentPlayer;
   } else if (row1C1 === "e") {
     board[0][0] = currentPlayer;
