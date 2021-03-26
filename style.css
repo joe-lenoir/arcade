@@ -117,5 +117,16 @@ button {
     text-decoration: underline;
 }
 
+#play-computer-again {
+    font-style: times; /*make this arcade style*/
+    color: red;
+    font-size: 15px;
+    /*border: solid 2px;
+    border-color: gray;*/
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+}
+
 
 

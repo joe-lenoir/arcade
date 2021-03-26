@@ -208,13 +208,13 @@ $("#computer-turn").click(function (event) {
 
   console.log("computer turn");
 
-  if (row2C2 === "o" && row1C1 === "o") {
+  if (row2C2 === "o" && row1C1 === "o" && row3C3 === "e") {
     board[2][2] = currentPlayer;
-  } else if (row2C2 === "o" && row1C3 === "o") {
+  } else if (row2C2 === "o" && row1C3 === "o" && row3C1 === "e") {
     board[2][0] = currentPlayer;
-  } else if (row2C2 === "o" && row1C2 === "o") {
+  } else if (row2C2 === "o" && row1C2 === "o" && row3C2 === "e") {
     board[2][1] = currentPlayer;
-  } else if (row2C2 === "o" && row2C1 === "o") {
+  } else if (row2C2 === "o" && row2C1 === "o" && row2C3 === "e") {
     board[1][2] = currentPlayer;
   }  else if (row2C2 === "x" && row1C1 === "x") {
     board[2][2] = currentPlayer;
@@ -249,6 +249,8 @@ $("#computer-turn").click(function (event) {
   } else {
     currentPlayer = "x";
   }
+
+  $("#play-computer-again").html("refresh page to play the computer again")
 
   renderBoard();
   gameWinner();
