@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #161370;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    background-color: #161370;
+    border-color: #161370;
+    color: #ffc40c;
+    font: copperplate;
+}
+
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 480px;
+    width: 480px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    height: 160px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: times; /*make this arcade style*/
+    color: #ffc40c;
+    font-size: 60px;
+    background-color: #161370;
+    border: 1px solid #ffc40c;
+}
+
+.top-of-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructionsP1, .instructionsP2 {
+    font-style: times; /*make this arcade style*/
+    color: #ffc40c;
+    font-size: 30px;
+    display: flex;
+}
+
+input {
+    font-style: times; /*make this arcade style*/
+    color: white;
+    font-size: 25px;
+    border-style: solid;
+    border-color: gray;
+    display: flex; /*not working*/
+    justify-content: center; /*not working*/
+}
+
+#current-player {
+    font-style: times; /*make this arcade style*/
+    color: #ffc40c;
+    font-size: 30px;
+}
+
+#game-winner {
+    font-style: times; /*make this arcade style*/
+    color: white;
+    font-size: 25px;
+}
+
+button {
+    font-style: times; /*make this arcade style*/
+    color: red;
+    font-size: 15px;
+    border: solid 2px;
+    border-color: gray;
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+#computer-opponent {
+    font-style: times; /*make this arcade style*/
+    color: red;
+    font-size: 15px;
+    /*border: solid 2px;
+    border-color: gray;*/
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+#computer-turn {
+    font-style: times; /*make this arcade style*/
+    color: red;
+    font-size: 15px;
+    /*border: solid 2px;
+    border-color: gray;*/
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+
+
