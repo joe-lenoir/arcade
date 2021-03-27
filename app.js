@@ -216,11 +216,11 @@ $("#computer-turn").click(function (event) {
     board[2][1] = currentPlayer;
   } else if (row2C2 === "o" && row2C1 === "o" && row2C3 === "e") {
     board[1][2] = currentPlayer;
-  } else if (row2C2 === "x" && row1C1 === "x") {
+  } else if (row2C2 === "x" && row1C1 === "x" && row3C3 === "e") {
     board[2][2] = currentPlayer;
-  } else if (row2C2 === "x" && row1C2 === "x") {
+  } else if (row2C2 === "x" && row1C2 === "x" && row3C2 === "e") {
     board[2][1] = currentPlayer;
-  } else if (row2C2 === "x" && row2C1 === "x") {
+  } else if (row2C2 === "x" && row2C1 === "x" && row2C1 === "e") {
     board[1][2] = currentPlayer;
   } else if (row2C2 === "e") {
     board[1][1] = currentPlayer;
